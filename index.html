@@ -1,324 +1,338 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
-    <title>Classic - Responsive Bootstrap 4.0 Template</title>
-<!--
-Classic Template
-http://www.templatemo.com/tm-488-classic
--->
-    <!-- load stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
-    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-          <![endif]-->
+    <title>Delicious Recipes</title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem 2rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0}</style>
 </head>
-
-    <body>
-       
-        <div class="tm-header">
-            <div class="container-fluid">
-                <div class="tm-header-inner">
-                    <a href="#" class="navbar-brand tm-site-name">Classic</a>
-                    
-                    <!-- navbar -->
-                    <nav class="navbar tm-main-nav">
-
-                        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
-                            &#9776;
-                        </button>
-                        
-                        <div class="collapse navbar-toggleable-sm" id="tmNavbar">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item active">
-                                    <a href="index.html" class="nav-link">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="about.html" class="nav-link">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="blog.html" class="nav-link">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Contact</a>
-                                </li>
-                            </ul>                        
-                        </div>
-                        
-                    </nav>  
-
-                </div>                                  
-            </div>            
-        </div>
-
-        <div class="tm-home-img-container">
-            <img src="img/tm-home-img.jpg" alt="Image" class="hidden-lg-up img-fluid">
-        </div>
-
-        <section class="tm-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
-                        <h2 class="tm-gold-text tm-title">Introduction</h2>
-                        <p class="tm-subtitle">Suspendisse ut magna vel velit cursus tempor ut nec nunc. Mauris vehicula, augue in tincidunt porta, purus ipsum blandit massa.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-content-box">
-                            <img src="img/tm-img-310x180-1.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
-                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #1</h4>
-                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a href="#" class="tm-btn text-uppercase">Detail</a>    
-                        </div>  
-
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-content-box">
-                            <img src="img/tm-img-310x180-2.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
-                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #2</h4>
-                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a href="#" class="tm-btn text-uppercase">Read More</a>    
-                        </div>  
-
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-content-box">
-                            <img src="img/tm-img-310x180-3.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
-                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #3</h4>
-                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a href="#" class="tm-btn text-uppercase">Detail</a>    
-                        </div>  
-
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-content-box">
-                            <img src="img/tm-img-310x180-4.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
-                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #4</h4>
-                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a href="#" class="tm-btn text-uppercase">Read More</a>    
-                        </div>  
-
-                    </div>
-                </div> <!-- row -->
-
-                <div class="row tm-margin-t-big">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        <div class="tm-2-col-left">
-                            
-                            <h3 class="tm-gold-text tm-title">Pellentesque fermentum mauris et posuere</h3>
-                            <p class="tm-margin-b-30">Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
-                            <img src="img/tm-img-660x330-1.jpg" alt="Image" class="tm-margin-b-40 img-fluid">
-                            <p>
-                                Donec tempor lobortis tortor, in feugiat massa facilisis sed. Ut dignissim viverra pretium. In eu justo maximus turpis feugiat finibus scelerisque nec eros. Cras nec lectus tempor nibh vestibulum eleifend et ac elit.
-                            </p>
-                            <p>Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id. Fusce sagittis ultricies felis, non luctus mauris lacinia quis.</p>
-                            <p class="m-b-2"> Ut fringilla lacus ac tempor ullamcorper. Mauris iaculis placerat ex et mattis. Mauris id vulputate lectus, id fermentum sapien.
-                            </p>
-                            <a href="#" class="tm-btn text-uppercase">Read More</a>
-
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-
-                        <div class="tm-2-col-right">
-
-                            <div class="tm-2-rows-md-swap">
-                                <div class="tm-overflow-auto row tm-2-rows-md-down-2">
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                        <h3 class="tm-gold-text tm-title">
-                                            Categories
-                                        </h3>
-                                        <nav>
-                                            <ul class="nav">
-                                                <li><a href="#" class="tm-text-link">Tincidunt non faucibus placerat</a></li>
-                                                <li><a href="#" class="tm-text-link">Vestibulum tempor ac lectus</a></li>
-                                                <li><a href="#" class="tm-text-link">Fusce non turpis euismod</a></li>
-                                                <li><a href="#" class="tm-text-link">Nam in augue consectetur</a></li>
-                                                <li><a href="#" class="tm-text-link">Text Link Color #006699</a></li>
-                                            </ul>
-                                        </nav>    
-                                    </div> <!-- col -->
-
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-xs-m-t">
-                                        <h3 class="tm-gold-text tm-title">
-                                            Useful Links
-                                        </h3>
-                                        <nav>
-                                            <ul class="nav">
-                                                <li><a href="#" class="tm-text-link">Suspendisse sed dui nulla</a></li>
-                                                <li><a href="#" class="tm-text-link">Lorem ipsum dolor sit</a></li>
-                                                <li><a href="#" class="tm-text-link">Duiss nec purus et eros</a></li>
-                                                <li><a href="#" class="tm-text-link">Etiam pulvinar et ligula sed</a></li>
-                                                <li><a href="#" class="tm-text-link">Proin egestas eu felis et iaculis</a></li>
-                                            </ul>
-                                        </nav>    
-                                    </div> <!-- col -->
-                                </div>                        
-                                
-                                <div class="row tm-2-rows-md-down-1 tm-margin-t-mid">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <h3 class="tm-gold-text tm-title tm-margin-b-30">Related Posts</h3>
-                                        <div class="media tm-related-post">
-                                          <div class="media-left media-middle">
-                                            <a href="#">
-                                              <img class="media-object" src="img/tm-img-240x120-1.jpg" alt="Generic placeholder image">
-                                            </a>
-                                          </div>
-                                          <div class="media-body">
-                                            <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
-                                            <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                          </div>
-                                        </div>
-                                        <div class="media tm-related-post">
-                                          <div class="media-left media-middle">
-                                            <a href="#">
-                                              <img class="media-object" src="img/tm-img-240x120-2.jpg" alt="Generic placeholder image">
-                                            </a>
-                                          </div>
-                                          <div class="media-body">
-                                            <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
-                                            <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                          </div>
-                                        </div>
-                                        <div class="media tm-related-post">
-                                          <div class="media-left media-middle">
-                                            <a href="#">
-                                              <img class="media-object" src="img/tm-img-240x120-3.jpg" alt="Generic placeholder image">
-                                            </a>
-                                          </div>
-                                          <div class="media-body">
-                                            <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
-                                            <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </div>
-
-                        </div>
-                        
-                    </div>
-                </div> <!-- row -->
-
-            </div>
-        </section>
-        
-        <footer class="tm-footer">
-            <div class="container-fluid">
-                <div class="row">
-                    
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                        
-                        <div class="tm-footer-content-box">
-                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Proin eu posuere felis</h3>
-                            <div class="tm-gray-bg">
-                                <p>Classic is free HTML CSS website template provided by templatemo for everyone. Feel free to use it.</p>
-                                <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                <p><strong>Danny Egg (Executive)</strong></p>    
-                            </div>    
-                        </div>
-                                                
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                        <div class="tm-footer-content-box tm-footer-links-container">
-                        
-                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Nulla tortor dolor</h3>
-                            <nav>
-                                <ul class="nav">
-                                    <li><a href="#" class="tm-footer-link">Tincidunt non faucibus</a></li>
-                                    <li><a href="#" class="tm-footer-link">Vestibulum tempor</a></li>
-                                    <li><a href="#" class="tm-footer-link">Fusce non turpis euismod</a></li>
-                                    <li><a href="#" class="tm-footer-link">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" class="tm-footer-link">Nam in augue consectetur</a></li>
-                                    <li><a href="#" class="tm-footer-link">Text Link Color #CCCC66</a></li>
-                                </ul>
-                            </nav>
-
-                        </div>
-                        
-                    </div>
-
-                    <!-- Add the extra clearfix for only the required viewport 
-                        http://stackoverflow.com/questions/24590222/bootstrap-3-grid-with-different-height-in-each-item-is-it-solvable-using-only
-                    -->
-                    <div class="clearfix hidden-lg-up"></div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-footer-content-box">
-                        
-                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Etiam mollis ornare</h3>
-                            <p class="tm-margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="tm-margin-b-30">
-                            <p class="tm-margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="tm-margin-b-30">
-                            <p class="tm-margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                            <a href="#" class="tm-btn tm-btn-gray text-uppercase">Read More</a>
-
-                        </div>
-                        
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-footer-content-box">
-                        
-                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Fusce non turpis</h3>
-                            <div class="tm-margin-b-30">
-                                <img src="img/tm-img-100x100-1.jpg" alt="Image" class="tm-footer-thumbnail">
-                                <img src="img/tm-img-100x100-2.jpg" alt="Image" class="tm-footer-thumbnail">
-                                <img src="img/tm-img-100x100-3.jpg" alt="Image" class="tm-footer-thumbnail">
-                                <img src="img/tm-img-100x100-4.jpg" alt="Image" class="tm-footer-thumbnail">
-                                <img src="img/tm-img-100x100-5.jpg" alt="Image" class="tm-footer-thumbnail">
-                                <img src="img/tm-img-100x100-6.jpg" alt="Image" class="tm-footer-thumbnail">
-                            </div>
-                            <p class="tm-margin-b-20">Curabitur dui massa, aliquam quis mi sed, tempor vulputate tellus. Sed vestibulum non neque.</p>
-                            <a href="#" class="tm-btn tm-btn-gray text-uppercase">Browse</a>
-
-                        </div>
-                        
-                    </div>
-
-
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-12 tm-copyright-col">
-                        <p class="tm-copyright-text">Copyright 2016 Your Company Name</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- load JS files -->
-        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
-        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h --> 
-        <script src="js/bootstrap.min.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
-       
+<body>
+    <header>
+        <h1><a href="index.html">Delicious Recipes</a></h1>
+        <p><b>Delicious, fresh</b> and <mark>tasty</mark>.</p>
+    </header>
+    <main>
+        <section>
+    
+    <aside>
+        <ul>
+            
+            <li><a href="0-easiest-way-to-make-perfect-chicken-balti.html">Easiest Way to Make Perfect Chicken Balti</a></li>
+            
+            <li><a href="1-recipe-tasty-auntie-and-39-s-cauliflower-and-chickpea-vegetarian-balti.html">Recipe: Tasty Auntie&amp;#39;s Cauliflower and Chickpea Vegetarian Balti</a></li>
+            
+            <li><a href="2-recipe-delicious-balti-butter-chicken.html">Recipe: Delicious Balti Butter Chicken</a></li>
+            
+            <li><a href="3-recipe-tasty-mandys-style-chicken-curry-balti.html">Recipe: Tasty Mandys style chicken curry/balti</a></li>
+            
+            <li><a href="4-easiest-way-to-prepare-tasty-vickys-chicken-balti-gf-df-ef-sf-nf.html">Easiest Way to Prepare Tasty Vickys Chicken Balti, GF DF EF SF NF</a></li>
+            
+            <li><a href="5-recipe-tasty-balti-chicken.html">Recipe: Tasty Balti Chicken</a></li>
+            
+            <li><a href="6-easiest-way-to-make-appetizing-birmingham-balti-chicken-curry.html">Easiest Way to Make Appetizing Birmingham Balti Chicken Curry</a></li>
+            
+            <li><a href="7-recipe-appetizing-vickys-homemade-balti-curry-paste-gf-df-ef-sf-nf.html">Recipe: Appetizing Vickys Homemade Balti Curry Paste, GF DF EF SF NF</a></li>
+            
+            <li><a href="8-how-to-make-tasty-balti-aloo-currypotato-bowl-curry.html">How to Make Tasty Balti Aloo Curry(Potato Bowl Curry)🍜</a></li>
+            
+            <li><a href="9-easiest-way-to-prepare-perfect-quorn-and-amp-sweet-potato-balti-pies.html">Easiest Way to Prepare Perfect Quorn® &amp;amp; Sweet Potato Balti Pies</a></li>
+            
+            <li><a href="10-how-to-prepare-tasty-my-lamb-and-chickpea-curry.html">How to Prepare Tasty My lamb and chickpea curry !</a></li>
+            
+            <li><a href="11-easiest-way-to-prepare-tasty-balti-macroni.html">Easiest Way to Prepare Tasty Balti macroni</a></li>
+            
+            <li><a href="12-easiest-way-to-make-appetizing-balti-gosht.html">Easiest Way to Make Appetizing Balti Gosht</a></li>
+            
+            <li><a href="13-easiest-way-to-prepare-appetizing-balti-chicken.html">Easiest Way to Prepare Appetizing Balti chicken</a></li>
+            
+            <li><a href="14-recipe-perfect-balti-chicken.html">Recipe: Perfect Balti Chicken</a></li>
+            
+            <li><a href="15-recipe-delicious-balti-gosht.html">Recipe: Delicious Balti gosht</a></li>
+            
+            <li><a href="16-recipe-appetizing-balti-macronies.html">Recipe: Appetizing Balti Macronies</a></li>
+            
+            <li><a href="17-recipe-tasty-pakistani-traditional-balti-gosht-balti-muttun-recipe.html">Recipe: Tasty Pakistani Traditional Balti Gosht /Balti Muttun Recipe♥</a></li>
+            
+            <li><a href="18-easiest-way-to-make-tasty-balti-gosht.html">Easiest Way to Make Tasty Balti gosht</a></li>
+            
+            <li><a href="19-how-to-cook-appetizing-balti-gosht.html">How to Cook Appetizing Balti Gosht</a></li>
+            
+            <li><a href="20-how-to-make-appetizing-khatti-meethi-balti-chicken.html">How to Make Appetizing Khatti-meethi balti chicken</a></li>
+            
+            <li><a href="21-easiest-way-to-make-tasty-balti-ghost.html">Easiest Way to Make Tasty Balti ghost</a></li>
+            
+            <li><a href="22-easiest-way-to-prepare-yummy-balti-gosht-cookpadsehri-ramadan5weekschallenge.html">Easiest Way to Prepare Yummy Balti Gosht #CookpadSehri #Ramadan5weeksChallenge</a></li>
+            
+            <li><a href="23-recipe-yummy-balti-karahi.html">Recipe: Yummy Balti karahi</a></li>
+            
+            <li><a href="24-recipe-perfect-chanay-ka-shorba-balti-chick-peas.html">Recipe: Perfect Chanay Ka Shorba (Balti Chick-peas )</a></li>
+            
+            <li><a href="25-easiest-way-to-make-perfect-brummie-potato-and-chickpea-balti-mashup.html">Easiest Way to Make Perfect Brummie Potato and Chickpea Balti Mashup</a></li>
+            
+            <li><a href="26-how-to-prepare-tasty-balti-fry-gosht.html">How to Prepare Tasty Balti fry gosht</a></li>
+            
+            <li><a href="27-how-to-prepare-tasty-balti-paneer.html">How to Prepare Tasty Balti paneer</a></li>
+            
+            <li><a href="28-recipe-perfect-baalti-paneer-curry.html">Recipe: Perfect Baalti Paneer curry</a></li>
+            
+            <li><a href="29-how-to-make-perfect-polish-mess.html">How to Make Perfect Polish Mess</a></li>
+            
+            <li><a href="30-easiest-way-to-prepare-delicious-vegan-fish-and-chips.html">Easiest Way to Prepare Delicious Vegan Fish and Chips</a></li>
+            
+            <li><a href="31-recipe-perfect-crispy-fish-and-chips-using-soda-water.html">Recipe: Perfect Crispy Fish and Chips (Using Soda Water)</a></li>
+            
+            <li><a href="32-how-to-make-appetizing-and-39-fish-and-chips-and-39-from-bbq.html">How to Make Appetizing &amp;#39;fish and chips&amp;#39; from bbq</a></li>
+            
+            <li><a href="33-recipe-delicious-masala-fish-and-chips.html">Recipe: Delicious Masala Fish and Chips</a></li>
+            
+            <li><a href="34-easiest-way-to-cook-delicious-fish-n-chips-alla-fluffy.html">Easiest Way to Cook Delicious Fish n chips alla Fluffy</a></li>
+            
+            <li><a href="35-recipe-perfect-homemade-fish-and-chips.html">Recipe: Perfect Homemade Fish and Chips</a></li>
+            
+            <li><a href="36-recipe-appetizing-beer-battered-fish-and-chips.html">Recipe: Appetizing Beer Battered Fish and Chips</a></li>
+            
+            <li><a href="37-easiest-way-to-cook-yummy-my-curried-fish-and-chips.html">Easiest Way to Cook Yummy My Curried Fish and Chips</a></li>
+            
+            <li><a href="38-recipe-perfect-miso-salmon-and-vegetable-steam-fry.html">Recipe: Perfect Miso Salmon and vegetable steam fry</a></li>
+            
+            <li><a href="39-how-to-cook-delicious-pan-fry-salmon-in-moroccan-spice.html">How to Cook Delicious Pan Fry Salmon in Moroccan Spice</a></li>
+            
+            <li><a href="40-easiest-way-to-make-tasty-spicy-salmon-fry.html">Easiest Way to Make Tasty Spicy Salmon fry</a></li>
+            
+            <li><a href="41-recipe-delicious-salmon-chips-and-pea.html">Recipe: Delicious Salmon, Chips and Pea</a></li>
+            
+            <li><a href="42-recipe-delicious-cod-cheek-fish-and-amp-chips-w-wasabi-mushy-peas.html">Recipe: Delicious Cod cheek “fish &amp;amp; chips” w/ wasabi mushy peas 🐟🍟</a></li>
+            
+            <li><a href="43-recipe-perfect-cod-fish-with-fries-portuguese-bacalhau-a-bras.html">Recipe: Perfect Cod fish with fries (portuguese Bacalhau à brás)</a></li>
+            
+            <li><a href="44-how-to-make-appetizing-deep-fry-salmon-with-mixed-veggies.html">How to Make Appetizing Deep fry salmon with mixed veggies</a></li>
+            
+        </ul>
+    </aside>
+    
+    <aside>
+        <ul>
+            
+            <li><a href="45-recipe-perfect-japanese-carrot-fry-with-young-sardines.html">Recipe: Perfect Japanese Carrot Fry with young Sardines</a></li>
+            
+            <li><a href="46-recipe-yummy-mexican-eggs-nacho-style.html">Recipe: Yummy Mexican eggs nacho style</a></li>
+            
+            <li><a href="47-how-to-prepare-tasty-tex-and-39-s-proper-beer-battered-fish-and-amp-chips-with-mushy-peas.html">How to Prepare Tasty Tex&amp;#39;s Proper Beer-Battered Fish &amp;amp; Chips with Mushy Peas 🐠🍟</a></li>
+            
+            <li><a href="48-easiest-way-to-cook-perfect-ipg-and-39-s-roast-chicken-dinner.html">Easiest Way to Cook Perfect IPG&amp;#39;s Roast Chicken Dinner</a></li>
+            
+            <li><a href="49-easiest-way-to-cook-appetizing-tex-and-39-s-steak-and-amp-chips.html">Easiest Way to Cook Appetizing Tex&amp;#39;s Steak &amp;amp; Chips 🐮🍟</a></li>
+            
+            <li><a href="50-recipe-yummy-tex-and-39-s-devil-and-39-s-cut-bbq-chicken-thighs.html">Recipe: Yummy Tex&amp;#39;s Devil&amp;#39;s Cut BBQ Chicken Thighs 🍗🍷🍶🔥</a></li>
+            
+            <li><a href="51-recipe-tasty-tex-and-39-s-corned-beef-and-39-tator-hash.html">Recipe: Tasty Tex&amp;#39;s Corned Beef &amp;#39;Tator Hash 🐮</a></li>
+            
+            <li><a href="52-recipe-yummy-sig-and-39-s-kartoffel-knodel-potato-dumpling.html">Recipe: Yummy Sig&amp;#39;s Kartoffel Knödel (Potato Dumpling)</a></li>
+            
+            <li><a href="53-easiest-way-to-cook-delicious-vickys-winter-pork-red-cabbage-and-cranberries-gf-df-ef-sf-nf.html">Easiest Way to Cook Delicious Vickys Winter Pork, Red Cabbage and Cranberries, GF DF EF SF NF</a></li>
+            
+            <li><a href="54-easiest-way-to-make-perfect-sig-and-39-s-german-reibekuchen-with-sauerkraut.html">Easiest Way to Make Perfect Sig&amp;#39;s German Reibekuchen with Sauerkraut</a></li>
+            
+            <li><a href="55-recipe-appetizing-tex-and-39-s-mam-and-39-s-scalloped-potatoes.html">Recipe: Appetizing Tex&amp;#39;s Mam&amp;#39;s Scalloped Potatoes 🐷🍲</a></li>
+            
+            <li><a href="56-how-to-make-yummy-cuban-mojo-pork-roast.html">How to Make Yummy Cuban Mojo Pork Roast</a></li>
+            
+            <li><a href="57-recipe-perfect-cauliflower-mash.html">Recipe: Perfect Cauliflower Mash</a></li>
+            
+            <li><a href="58-easiest-way-to-make-delicious-vickys-kedgeree-no-eggs-for-jack-gf-df-ef-sf-nf.html">Easiest Way to Make Delicious Vickys Kedgeree (No Eggs for Jack) GF DF EF SF NF</a></li>
+            
+            <li><a href="59-how-to-prepare-yummy-vickys-venison-chilli-con-carne-gf-df-ef-sf-nf.html">How to Prepare Yummy Vickys Venison Chilli Con Carne, GF DF EF SF NF</a></li>
+            
+            <li><a href="60-recipe-perfect-my-crispy-salt-and-amp-pepper-beef-strips.html">Recipe: Perfect My Crispy Salt &amp;amp; Pepper Beef Strips 😘</a></li>
+            
+            <li><a href="61-easiest-way-to-cook-perfect-tex-and-39-s-classic-british-sunday-roast-with-a-mustard-glaze.html">Easiest Way to Cook Perfect Tex&amp;#39;s Classic British Sunday Roast with a Mustard Glaze 🇬🇧🐮</a></li>
+            
+            <li><a href="62-recipe-appetizing-my-lamb-stew-soup-off-the-bone.html">Recipe: Appetizing My Lamb Stew Soup Off the Bone 😊</a></li>
+            
+            <li><a href="63-how-to-cook-yummy-tex-and-39-s-mushy-peas.html">How to Cook Yummy Tex&amp;#39;s Mushy Peas 🇬🇧🍲</a></li>
+            
+            <li><a href="64-recipe-tasty-tex-and-39-s-surf-and-amp-turf-sarnie.html">Recipe: Tasty Tex&amp;#39;s Surf &amp;amp; Turf Sarnie 🐠🐮🍞</a></li>
+            
+            <li><a href="65-recipe-delicious-carnivore-risotto.html">Recipe: Delicious Carnivore Risotto</a></li>
+            
+            <li><a href="66-recipe-delicious-my-quick-sweet-and-sour-veggie-pasta.html">Recipe: Delicious My Quick Sweet and Sour Veggie Pasta 😜</a></li>
+            
+            <li><a href="67-recipe-tasty-budget-seafood-pasta.html">Recipe: Tasty Budget Seafood Pasta</a></li>
+            
+            <li><a href="68-recipe-yummy-mandys-lamb-country-stew.html">Recipe: Yummy Mandys Lamb Country Stew</a></li>
+            
+            <li><a href="69-recipe-yummy-sweet-and-sour-chicken-low-calorie.html">Recipe: Yummy Sweet and Sour Chicken Low Calorie</a></li>
+            
+            <li><a href="70-easiest-way-to-cook-yummy-vickys-pork-apple-and-amp-mustard-burgers-gf-df-ef-sf-nf.html">Easiest Way to Cook Yummy Vickys Pork, Apple &amp;amp; Mustard Burgers, GF DF EF SF NF</a></li>
+            
+            <li><a href="71-easiest-way-to-prepare-yummy-sig-and-39-s-okra-and-lentil-stew.html">Easiest Way to Prepare Yummy Sig&amp;#39;s Okra and Lentil Stew</a></li>
+            
+            <li><a href="72-recipe-yummy-sig-and-39-s-german-pea-soup.html">Recipe: Yummy Sig&amp;#39;s German Pea Soup</a></li>
+            
+            <li><a href="73-recipe-yummy-stuffed-strip-loin-steak.html">Recipe: Yummy Stuffed Strip Loin Steak.</a></li>
+            
+            <li><a href="74-easiest-way-to-cook-delicious-low-fat-sweet-and-sour-chicken.html">Easiest Way to Cook Delicious Low Fat Sweet and Sour Chicken</a></li>
+            
+            <li><a href="75-recipe-tasty-my-crispy-veggie-wrap-sandwich.html">Recipe: Tasty My Crispy Veggie Wrap Sandwich  ☺</a></li>
+            
+            <li><a href="76-how-to-prepare-delicious-slow-cooker-seafood-and-rice-soup.html">How to Prepare Delicious Slow Cooker Seafood and Rice Soup</a></li>
+            
+            <li><a href="77-how-to-make-yummy-sig-and-39-s-baked-fusion.html">How to Make Yummy Sig&amp;#39;s Baked Fusion</a></li>
+            
+            <li><a href="78-recipe-tasty-healthy-fried-chicken.html">Recipe: Tasty Healthy Fried Chicken</a></li>
+            
+            <li><a href="79-how-to-prepare-perfect-my-crispy-chili-beef-with-noodles.html">How to Prepare Perfect My Crispy Chili Beef with Noodles 😉😆</a></li>
+            
+            <li><a href="80-recipe-yummy-pasta-whith-chesee-and-bacon.html">Recipe: Yummy Pasta whith chesee and bacon</a></li>
+            
+            <li><a href="81-how-to-prepare-tasty-chicken-schnitzel.html">How to Prepare Tasty Chicken Schnitzel</a></li>
+            
+            <li><a href="82-how-to-make-yummy-kickin-teriyaki-chicken-and-rice.html">How to Make Yummy Kickin Teriyaki Chicken and Rice</a></li>
+            
+            <li><a href="83-how-to-cook-appetizing-chicken-jalfrezi.html">How to Cook Appetizing Chicken Jalfrezi</a></li>
+            
+            <li><a href="84-recipe-delicious-traditional-cottage-pie.html">Recipe: Delicious Traditional Cottage Pie</a></li>
+            
+            <li><a href="85-recipe-yummy-nasi-goreng-chicken-with-buttered-beans.html">Recipe: Yummy Nasi Goreng chicken with buttered beans</a></li>
+            
+            <li><a href="86-recipe-tasty-vickys-spiced-quinoa-roasted-chickpeas-and-amp-broccoli-gf-df-ef-sf-nf.html">Recipe: Tasty Vickys Spiced Quinoa Roasted Chickpeas &amp;amp; Broccoli GF DF EF SF NF</a></li>
+            
+            <li><a href="87-easiest-way-to-make-yummy-my-macaroni-chicken-and-cheese-bake.html">Easiest Way to Make Yummy My Macaroni Chicken and Cheese Bake 💛</a></li>
+            
+            <li><a href="88-easiest-way-to-make-perfect-sig-and-39-s-german-labskaus-sailors-cornedbeefhash-myfavouriterecipes.html">Easiest Way to Make Perfect Sig&amp;#39;s German Labskaus sailors cornedbeefhash #myfavouriterecipes</a></li>
+            
+            <li><a href="89-recipe-delicious-slow-cooker-lamb-stew.html">Recipe: Delicious Slow cooker lamb stew</a></li>
+            
+        </ul>
+    </aside>
+    
+    <aside>
+        <ul>
+            
+            <li><a href="90-how-to-cook-appetizing-chicken-wraps.html">How to Cook Appetizing Chicken Wraps</a></li>
+            
+            <li><a href="91-recipe-perfect-portuguese-fish-pasta.html">Recipe: Perfect Portuguese Fish Pasta</a></li>
+            
+            <li><a href="92-easiest-way-to-prepare-yummy-pasta-with-chickpeas.html">Easiest Way to Prepare Yummy Pasta with Chickpeas</a></li>
+            
+            <li><a href="93-recipe-appetizing-traditional-fish-soup.html">Recipe: Appetizing Traditional Fish Soup</a></li>
+            
+            <li><a href="94-easiest-way-to-cook-appetizing-cod-fried-in-olive-oil-and-onions.html">Easiest Way to Cook Appetizing Cod Fried in Olive Oil and Onions</a></li>
+            
+            <li><a href="95-easiest-way-to-cook-delicious-oven-baked-sea-bream.html">Easiest Way to Cook Delicious Oven Baked Sea Bream</a></li>
+            
+            <li><a href="96-recipe-delicious-sausage-with-brown-onion-gravy.html">Recipe: Delicious Sausage With Brown Onion Gravy.</a></li>
+            
+            <li><a href="97-how-to-prepare-delicious-roasted-lamb-shanks.html">How to Prepare Delicious Roasted Lamb Shanks.</a></li>
+            
+            <li><a href="98-recipe-perfect-sig-and-39-s-olive-pesto-and-tomato-tartlet.html">Recipe: Perfect Sig&amp;#39;s  Olive, Pesto and Tomato Tartlet</a></li>
+            
+            <li><a href="99-easiest-way-to-prepare-tasty-spicy-chicken-wings.html">Easiest Way to Prepare Tasty Spicy Chicken Wings.</a></li>
+            
+            <li><a href="100-how-to-make-delicious-sig-and-39-s-tomato-fusion.html">How to Make Delicious Sig&amp;#39;s  Tomato Fusion</a></li>
+            
+            <li><a href="101-recipe-yummy-sig-and-39-s-salmon-filled-filo-purse.html">Recipe: Yummy Sig&amp;#39;s Salmon filled filo purse</a></li>
+            
+            <li><a href="102-easiest-way-to-make-yummy-garden-spinach-omelette.html">Easiest Way to Make Yummy Garden spinach omelette</a></li>
+            
+            <li><a href="103-recipe-delicious-omg-stuffed-peppers.html">Recipe: Delicious OMG Stuffed Peppers</a></li>
+            
+            <li><a href="104-recipe-appetizing-another-cottage-pie.html">Recipe: Appetizing Another cottage pie</a></li>
+            
+            <li><a href="105-easiest-way-to-prepare-perfect-hot-green-bean-salad.html">Easiest Way to Prepare Perfect Hot Green Bean Salad</a></li>
+            
+            <li><a href="106-recipe-delicious-roast-beef.html">Recipe: Delicious Roast Beef.</a></li>
+            
+            <li><a href="107-recipe-tasty-butternut-squash-and-spinach-risotto.html">Recipe: Tasty Butternut Squash and Spinach Risotto</a></li>
+            
+            <li><a href="108-recipe-appetizing-kale-and-chorizo-soup.html">Recipe: Appetizing Kale and chorizo soup</a></li>
+            
+            <li><a href="109-easiest-way-to-make-tasty-spinach-bacon-mushroom-and-lentil-salad.html">Easiest Way to Make Tasty Spinach, Bacon, Mushroom and Lentil salad</a></li>
+            
+            <li><a href="110-easiest-way-to-make-perfect-yummy-avo-sandwich.html">Easiest Way to Make Perfect Yummy Avo Sandwich</a></li>
+            
+            <li><a href="111-recipe-perfect-my-folded-omelette-with-bacon-onion-and-cheese-inside-topped-with-grated-mozzarella.html">Recipe: Perfect My Folded Omelette with Bacon, Onion and Cheese Inside, Topped with Grated Mozzarella 😘</a></li>
+            
+            <li><a href="112-how-to-make-perfect-my-cooling-chicken-pasta-salad.html">How to Make Perfect My  Cooling  Chicken  Pasta  Salad  😀😉</a></li>
+            
+            <li><a href="113-how-to-cook-appetizing-simple-chicken-and-red-pepper-curry.html">How to Cook Appetizing Simple chicken and red pepper curry</a></li>
+            
+            <li><a href="114-easiest-way-to-cook-tasty-my-poached-egg-and-seared-gammon-with-homemade-hollandaise-sauce.html">Easiest Way to Cook Tasty My Poached Egg and Seared Gammon with Homemade Hollandaise Sauce 😉😀</a></li>
+            
+            <li><a href="115-how-to-cook-yummy-mustard-roast-beef.html">How to Cook Yummy Mustard Roast Beef</a></li>
+            
+            <li><a href="116-how-to-cook-tasty-mustard-yorkshire-pudding.html">How to Cook Tasty Mustard Yorkshire Pudding</a></li>
+            
+            <li><a href="117-recipe-tasty-chicken-gizzard-stew.html">Recipe: Tasty Chicken Gizzard Stew</a></li>
+            
+            <li><a href="118-easiest-way-to-make-perfect-stuffed-leg-lamb-roast-potatoes-and-amp-gravy.html">Easiest Way to Make Perfect Stuffed Leg Lamb, roast potatoes &amp;amp; gravy.</a></li>
+            
+            <li><a href="119-recipe-perfect-raw-vegetable-pasta.html">Recipe: Perfect Raw vegetable pasta</a></li>
+            
+            <li><a href="120-recipe-perfect-my-spaghetti-and-cheese-bake.html">Recipe: Perfect My Spaghetti  and Cheese Bake 😄</a></li>
+            
+            <li><a href="121-how-to-cook-appetizing-carbonara-of-the-sea.html">How to Cook Appetizing CARBONARA of the SEA!!!</a></li>
+            
+            <li><a href="122-how-to-make-delicious-vickys-garlic-and-amp-herb-chicken-and-mushrooms-gf-df-ef-sf-nf.html">How to Make Delicious Vickys Garlic &amp;amp; Herb Chicken and Mushrooms, GF DF EF SF NF</a></li>
+            
+            <li><a href="123-recipe-appetizing-my-chorizo-pasta-with-mozzarella-grated-on-top.html">Recipe: Appetizing My Chorizo Pasta with Mozzarella Grated on Top  😀</a></li>
+            
+            <li><a href="124-how-to-prepare-yummy-paloma-and-39-s-baked-tilapia-with-celery-courgette-spinach-in-white.html">How to Prepare Yummy Paloma&amp;#39;s Baked Tilapia with Celery, Courgette, Spinach in white</a></li>
+            
+            <li><a href="125-easiest-way-to-cook-perfect-okonomiyaki.html">Easiest Way to Cook Perfect Okonomiyaki</a></li>
+            
+            <li><a href="126-easiest-way-to-cook-appetizing-sig-and-39-s-potato-salad-special.html">Easiest Way to Cook Appetizing Sig&amp;#39;s Potato Salad Special</a></li>
+            
+            <li><a href="127-recipe-perfect-vickys-creamy-chorizo-fusilli-gf-df-ef-sf-nf.html">Recipe: Perfect Vickys Creamy Chorizo Fusilli, GF DF EF SF NF</a></li>
+            
+            <li><a href="128-how-to-make-appetizing-bacon-leek-and-potato-soup.html">How to Make Appetizing Bacon, Leek and Potato Soup</a></li>
+            
+            <li><a href="129-easiest-way-to-make-yummy-sig-and-39-s-cauliflower-wrap.html">Easiest Way to Make Yummy Sig&amp;#39;s  Cauliflower Wrap</a></li>
+            
+            <li><a href="130-recipe-yummy-easy-haddock-and-amp-rice-dish.html">Recipe: Yummy Easy Haddock &amp;amp; Rice Dish.</a></li>
+            
+            <li><a href="131-recipe-tasty-baked-fetta-and-beetroots-pesto-oil-with-lamb-chops.html">Recipe: Tasty BAKED FETTA and BEETROOTS + PESTO OIL with LAMB CHOPS</a></li>
+            
+            <li><a href="132-easiest-way-to-make-delicious-mandys-whole-chicken-slow-cooker.html">Easiest Way to Make Delicious Mandys whole chicken slow cooker</a></li>
+            
+        </ul>
+    </aside>
+    
+</section>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+            
+                <a href="index.html">Index</a>
+                
+                    |
+                
+            
+                <a href="contact.html">Contact</a>
+                
+                    |
+                
+            
+                <a href="copyright.html">Copyright</a>
+                
+                    |
+                
+            
+                <a href="dmca.html">DMCA</a>
+                
+                    |
+                
+            
+                <a href="privacy-policy.html">Privacy-Policy</a>
+                
+            
+        </center>
+    </footer>
 </body>
+
 </html>
